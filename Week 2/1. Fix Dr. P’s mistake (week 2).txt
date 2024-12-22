@@ -1,10 +1,15 @@
-#include<stdio.h>
+#include <stdio.h>
 #define PI 3.14159
-int main(void)
-{ 
- 	int radius;
- 	printf("Enter radius:");
- 	scanf("%d", &radius);
-	printf("volume is : %lf \n\n", (4.00/3)*PI*(radius*radius*radius) );
-	return 0;
+
+int main(void) {
+    int radius;
+    printf("Enter radius: ");
+    scanf("%d", &radius);
+    
+    // Correct formula and use of double for floating-point calculation
+    double volume = (4.0 / 3.0) * PI * radius * radius * radius;
+    
+    printf("Volume is: %.2f \n\n", volume);
+    
+    return 0;
 }
